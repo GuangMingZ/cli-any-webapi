@@ -1,0 +1,58 @@
+{
+  "name": "cli-any-webapi",
+  "version": "1.0.0",
+  "description": "Convert Web system HTTP REST APIs to TypeScript CLI commands for AI Agent consumption. Analyzes source code and API request logs (HAR/CSV) to generate fully-typed Commander.js CLI packages with Bearer Token / Cookie Session authentication.",
+  "author": {
+    "name": "cli-any-webapi contributors"
+  },
+  "homepage": "https://github.com/GuangMingZ/cli-any-webapi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuangMingZ/cli-any-webapi.git"
+  },
+  "keywords": [
+    "cli",
+    "api",
+    "rest",
+    "typescript",
+    "codegen",
+    "ai-agent",
+    "commander",
+    "http-client",
+    "bearer-token",
+    "cookie-session"
+  ],
+  "license": "MIT",
+  "platforms": [
+    {
+      "name": "claude-code",
+      "configDir": ".claude-plugin",
+      "commandsDir": "commands",
+      "installPath": "~/.claude/plugins/cli-any-webapi"
+    },
+    {
+      "name": "codebuddy",
+      "skillFile": "SKILL.md",
+      "resourceDirs": ["templates", "scripts", "commands"],
+      "installPath": "~/.codebuddy/skills/cli-any-webapi"
+    }
+  ],
+  "commands": [
+    {
+      "name": "cli-any-webapi",
+      "description": "Generate a TypeScript CLI package from Web system source code and API logs"
+    },
+    {
+      "name": "cli-any-webapi:add",
+      "description": "Add a single API endpoint to an existing generated CLI package"
+    },
+    {
+      "name": "cli-any-webapi:sync",
+      "description": "Incrementally sync an existing CLI package with updated source or logs"
+    },
+    {
+      "name": "cli-any-webapi:list",
+      "description": "List all generated CLI packages in a directory"
+    }
+  ]
+}
