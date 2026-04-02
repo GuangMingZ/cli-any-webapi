@@ -1,0 +1,56 @@
+{
+  "name": "@GuangMingZ/cli-any-webapi",
+  "version": "1.0.0",
+  "description": "Claude Code / CodeBuddy plugin: convert Web system HTTP REST APIs to TypeScript CLI commands for AI Agent consumption",
+  "main": ".claude-plugin/plugin.json",
+  "codebuddy": {
+    "skill": "SKILL.md",
+    "skillDir": "."
+  },
+  "keywords": [
+    "claude-code",
+    "claude-plugin",
+    "codebuddy",
+    "codebuddy-skill",
+    "cli",
+    "api",
+    "rest",
+    "typescript",
+    "codegen",
+    "ai-agent",
+    "commander",
+    "webapp",
+    "http-client"
+  ],
+  "author": "cli-any-webapi contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuangMingZ/cli-any-webapi.git"
+  },
+  "homepage": "https://github.com/GuangMingZ/cli-any-webapi#readme",
+  "bugs": {
+    "url": "https://github.com/GuangMingZ/cli-any-webapi/issues"
+  },
+  "files": [
+    ".claude-plugin/",
+    "commands/",
+    "templates/",
+    "scripts/",
+    "HARNESS.md",
+    "README.md",
+    "QUICKSTART.md",
+    "SKILL.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "SECURITY.md",
+    "verify-plugin.sh"
+  ],
+  "scripts": {
+    "verify": "bash verify-plugin.sh",
+    "prepublishOnly": "bash verify-plugin.sh"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

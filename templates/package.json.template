@@ -1,0 +1,26 @@
+{
+  "name": "{{PROJECT_NAME}}-api-cli",
+  "version": "1.0.0",
+  "description": "Auto-generated CLI for {{PROJECT_DISPLAY_NAME}} Web API — powered by cli-any-webapi",
+  "type": "module",
+  "bin": {
+    "{{PROJECT_NAME}}-api-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean --target node18",
+    "dev": "tsup src/index.ts --format esm --watch --target node18",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
