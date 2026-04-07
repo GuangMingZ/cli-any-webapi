@@ -1,5 +1,5 @@
 {
-  "name": "@GuangMingZ/cli-any-webapi",
+  "name": "@guangmingz/cli-any-webapi",
   "version": "1.0.0",
   "description": "Claude Code / CodeBuddy plugin: convert Web system HTTP REST APIs to TypeScript CLI commands for AI Agent consumption",
   "main": ".claude-plugin/plugin.json",
